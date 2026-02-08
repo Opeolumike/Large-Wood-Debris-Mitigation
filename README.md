@@ -1,10 +1,10 @@
 ## Project Title: Mitigating Large Wood Impact in River Torridge
 ## Brief Description
-Large wood is defined as logs having length greater than 1 m and diameter of at least 10 cm (Gippel et al., 1996). Large wood is highly beneficial to nature. It enhances geomorphological diversity, regulates sediment transport, and provides critical habitat for aquatic fauna (Wohl, 2017). However, tree logs can become entrapped at in-channel structures such as bridge piers and then trap other large wood debris such as twigs and tree branches to form large accumulations (Diehl, 1997; Lagasse et al., 2010; Panici and de Almeida, 2018). 
+Large wood is defined as logs having length greater than 1m and diameter of at least 10cm (Gippel et al., 1996). Large wood is highly beneficial to nature. It enhances geomorphological diversity, regulates sediment transport, and provides critical habitat for aquatic fauna (Wohl, 2017). However, tree logs can become entrapped at in-channel structures such as bridge piers and then trap other large wood debris such as twigs and tree branches to form large accumulations (Diehl, 1997; Lagasse et al., 2010; Panici and de Almeida, 2018). 
 
 During high flooding events, woods are transported downstream and can become entrapped at river crossings. These accumulations, called debris,  obstruct the channel flow, leading to increased upstream water levels, thereby causing significant damage to nearby bridges and properties.
 
-This project focused on the design of upstream debris retention systems (large wood catchers). This is a balanced approach as it safeguards the bridges and nearby properties by trapping hazardous wood loads during flooding. It also allows for the controlled reintroduction of wood for aquatic conservation purposes (Thomas and Nisbet, 2007).
+This study focused on the design of upstream debris-retention systems (large wood catchers). This is a balanced approach as it safeguards the bridges and nearby properties by trapping hazardous wood loads during flooding. It also allows for the controlled reintroduction of wood for aquatic conservation purposes (Thomas and Nisbet, 2007).
 
 ## Study Area
 The study focused on the River Torridge in Devon, England, a catchment characterised by significant riparian woodland (a type of woodland that grows along the banks of rivers, streams, and other watercourses) and a history of large wood (LW) transport. 
