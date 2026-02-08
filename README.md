@@ -28,6 +28,7 @@ These are the R scripts for the Shiny app:
 - The interactive map will display in the "Viewer" tab.
 - Click the "Show in new window" icon just below the "Plots" above the interactive map.
 - The interactive map will display on your browser.
+- You can turn on and off each layer on the map.
 
 ## Results
 The spatial distribution of Large Wood (LW) across the River Torridge catchment was found to be non-random, exhibiting distinct patterns of accumulation rather than uniform dispersion.
