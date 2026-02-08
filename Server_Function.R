@@ -1,7 +1,14 @@
 output$map <- renderLeaflet({
+  
+  # Define color scales for slope, aspect and heatmap based on their specific data ranges
+  pal_heatmap <- colorNumeric(palette = "inferno", domain = na.omit(values(heatmap)), na.color = "transparent")
+  pal_aspect <- colorNumeric(palette = "Spectral", domain = c(0, 360), na.color = "transparent")
+  pal_slope <- colorNumeric("YlOrRd", domain = na.omit(values(slope)), na.color = "transparent")
+  
   leaflet() %>% 
+    
     # Set initial view
-    setView(lng = -4.200000, lat = 51.050000, zoom = 9.3) %>%
+    setView(lng = -4.200000, lat = 51.050000, zoom = 10) %>%
     
     # Base tiles
     addProviderTiles(providers$OpenStreetMap, group = "Colour") %>%
@@ -77,9 +84,37 @@ output$map <- renderLeaflet({
     # Add Aspect raster
     addRasterImage(
       aspect,
-      colors = colorNumeric("viridis", values(aspect), na.color = "transparent"),
+      colors = pal_aspect, # Changed from "viridis" to match your legend
       opacity = 0.7,
       group = "Aspect"
+    ) %>%
+    
+    # Add the Legend for the Aspect
+    addLegend(
+      pal = pal_aspect, 
+      values = c(0, 360),
+      title = "Aspect (Degrees)",
+      position = "bottomleft",
+      labFormat = labelFormat(suffix = "°"),
+      group = "Aspect" 
+    ) %>%
+    
+    # Add the Legend for the Slope
+    addLegend(
+      pal = pal_slope, 
+      values = values(slope),
+      title = "Slope (Degrees)",
+      position = "bottomleft",
+      group = "Slope"
+    ) %>%
+    
+    # Add the Legend for the Heatmap
+    addLegend(
+      pal = pal_heatmap, 
+      values = values(heatmap),
+      title = "Heatmap",
+      position = "bottomleft",
+      group = "Heatmap"
     ) %>%
     
     # Add Layer control

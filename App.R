@@ -34,6 +34,9 @@ server <- function(input, output, session){
   source("Server_Function.R", local = TRUE)
 }
 
+# Force the app to launch in the system's default browser
+options(shiny.launch.browser = TRUE)
+
 # Run the application
 shinyApp(ui, server)
 

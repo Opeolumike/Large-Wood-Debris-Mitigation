@@ -8,7 +8,6 @@ lw_points <- st_transform(lw_points, crs = 4326)
 river <- st_transform(river, crs = 4326) %>% 
          st_zm(drop = TRUE, what = "ZM")
 bridges <- st_transform(bridges, crs = 4326)
-
 clusters <- st_read("LW_Clusters.shp")
 clusters <- st_transform(clusters, crs = 4326)
 
@@ -35,5 +34,3 @@ nearest_distance <- st_transform(nearest_distance, crs = 4326)
 # Load large wood catchers
 catchers <- st_read("LargeWood_Catchers.shp") 
 catchers <- st_transform(catchers, crs = 4326)
-
-pal_heatmap <- colorNumeric(palette = "inferno", domain = na.omit(values(heatmap)), na.color = "transparent")
