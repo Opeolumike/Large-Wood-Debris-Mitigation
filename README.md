@@ -25,9 +25,7 @@ These are the R scripts for the Shiny app:
   ```r
   library("shiny")
   runGitHub("Large-Wood-Debris-Mitigation", "opeolumike")
-- The interactive map will display in the "Viewer" tab.
-- Click the "Show in new window" icon just below the "Plots" above the interactive map.
-- The interactive map will display on your browser.
+- The interactive map will display on your default browser.
 - You can turn on and off each layer on the map.
 
 ## Results
