@@ -1,4 +1,4 @@
-## Project Title: Mitigating Large Wood Impact in River Torridge
+## Project Title: Mitigating the Impact of Large Wood Debris on Bridges and Properties
 ## Brief Description
 Large wood is defined as logs having length greater than 1m and diameter of at least 10cm (Gippel et al., 1996). Large wood is highly beneficial to nature. It enhances geomorphological diversity, regulates sediment transport, and provides critical habitat for aquatic fauna (Wohl, 2017). However, tree logs can become entrapped at in-channel structures such as bridge piers and then trap other large wood debris such as twigs and tree branches to form large accumulations (Diehl, 1997; Lagasse et al., 2010; Panici and de Almeida, 2018). 
 
