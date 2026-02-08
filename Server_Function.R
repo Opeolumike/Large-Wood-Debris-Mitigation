@@ -6,43 +6,53 @@ output$map <- renderLeaflet({
     # Base tiles
     addProviderTiles(providers$OpenStreetMap, group = "Colour") %>%
     
+    
+    addPolylines(
+      data = river,
+      color = "#FF00FF",      
+      weight = 3,         
+      opacity = 0.8,
+      group = "River Torridge",
+      highlightOptions = highlightOptions(bringToFront = TRUE)
+    ) %>%
+    
     # Add Bridges
-    addCircles(
+    addCircleMarkers(
       data = bridges,
-      color = "black",
-      fillColor = "purple",
-      fillOpacity = 0.8,
+      color = "#000000",
+      fillColor = "#A020F0",
+      fillOpacity = 1,
       weight = 2,
-      radius = 50,
+      radius = 4,
       group = "Bridges"
     ) %>%
     
     # Add Large Wood Catchers
     addCircleMarkers(
       data = catchers,
-      color = "black",
-      fillColor = "orange",
+      color = "#000000",
+      fillColor = "#FFA800",
       fillOpacity = 1,
-      weight = 1,
+      weight = 2,
       radius = 6,
-      group = "LW_Catchers"
+      group = "LW Catchers"
     ) %>%
     
     # Add Clusters
     addCircleMarkers(
       data = clusters,
-      color = "black",
+      color = "#000000",
       fillColor = ~pal_clusters(CLUSTER_ID),
       fillOpacity = 0.6,
       radius = 6,
-      group = "LW_Clusters",
+      group = "LW Clusters",
       popup = ~paste("Cluster ID:", CLUSTER_ID)
     ) %>%
     
     # Add Nearest Distance lines
     addPolylines(
       data = nearest_distance,
-      color = "blue",
+      color = "#0000FF",
       weight = 3,
       opacity = 0.7,
       group = "Nearest Distance"
@@ -74,27 +84,27 @@ output$map <- renderLeaflet({
     
     # Add Layer control
     addLayersControl(
-      baseGroups = c("Open Street Map"),
+      baseGroups = c("OpenStreetMap"),
       overlayGroups = c(
+        "River Torridge",
         "Bridges",
-        "River",
-        "LW_Clusters",
+        "LW Clusters",
         "Heatmap",
-        "LW_Catchers",
         "Nearest Distance",
+        "LW Catchers",
         "Aspect",
         "Slope"
       ),
       options = layersControlOptions(collapsed = FALSE)
     ) %>%
     
-    # Hide all overlay groups except bridges initially when loaded until they are ticked
+    # Hide all overlay groups except River Torridge initially when loaded until they are ticked
     hideGroup(c(
-      "River",
-      "LW_Clusters",
+      "Bridges",
+      "LW Clusters",
       "Heatmap",
-      "LW_Catchers",
       "Nearest Distance",
+      "LW Catchers",
       "Aspect",
       "Slope"
     ))

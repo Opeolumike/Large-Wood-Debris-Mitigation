@@ -5,7 +5,8 @@ bridges <- st_read("DevonBridgeClipped.shp")
 
 #Convert vectors to CRS 4326
 lw_points <- st_transform(lw_points, crs = 4326)
-river <- st_transform(river, crs = 4326)
+river <- st_transform(river, crs = 4326) %>% 
+         st_zm(drop = TRUE, what = "ZM")
 bridges <- st_transform(bridges, crs = 4326)
 
 clusters <- st_read("LW_Clusters.shp")
