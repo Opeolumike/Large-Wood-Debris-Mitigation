@@ -25,7 +25,7 @@ These are the R scripts for the Shiny app:
   ```r
   library("shiny")
   runGitHub("Large-Wood-Debris-Mitigation", "opeolumike")
-- The interactive map will display on your default browser (Wait for a few seconds).
+- Wait a few seconds. The interactive map will display on your default browser
 - You can turn on and off each layer on the map.
 
 ## Results
