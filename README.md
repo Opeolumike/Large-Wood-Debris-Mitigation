@@ -16,7 +16,7 @@ The primary spatial data included the shapefile representing the river channel c
 These are the R scripts for the Shiny app:
 - App.R
 - Global.R
-- Sever_Function.R
+- Server_Function.R
 - Global.R
 
 ## How to Run the Shiny App
