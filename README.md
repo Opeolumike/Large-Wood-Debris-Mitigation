@@ -23,7 +23,7 @@ These are the R scripts for the Shiny app:
 - Open RStudio
 - Install required R packages if they are not installed already. Run this in the console:
   ```r
-  install.packages(c("shiny", "leaflet", "sf", "raster", "ggplot2", "ggiraph", "RColorBrewer", "terra", "leafem")) ```
+  install.packages(c("shiny", "leaflet", "sf", "raster", "ggplot2", "ggiraph", "RColorBrewer", "terra", "leafem"))
 
 - Run the command below in the console when the packages have been installed: 
   ```r
