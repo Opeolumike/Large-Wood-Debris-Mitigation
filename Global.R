@@ -20,11 +20,11 @@ heatmap <- rast("Heatmap.tif")
 heatmap <- project(heatmap, crs(river))
 
 # Load slope
-slope <- rast("slope.tif")
+slope <- rast("Slope.tif")
 slope <- project(slope, crs(river))
 
 # Load aspect
-aspect <- rast("aspect.tif")
+aspect <- rast("Aspect.tif")
 aspect <- project(aspect, crs(river))
 
 # Load nearest distance
