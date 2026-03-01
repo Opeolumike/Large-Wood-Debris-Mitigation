@@ -3,6 +3,8 @@
 
 # Load libraries
 library(shiny)
+library(munsell)
+library(uuid)
 library(leaflet)
 library(sf)
 library(raster)
@@ -21,7 +23,7 @@ source("Global.R")
 # Define UI for visualisation
 source("UI.R")
 
-ui <- navbarPage("Instream Large Wood on the River Torridge", id = 'nav',
+ui <- navbarPage("Simulating LargeWood Debris Mitigation on the River Torridge", id = 'nav',
                  tabPanel("Map", 
                           div(class="outer",
                               leafletOutput("map", height = "calc(100vh - 70px)")
