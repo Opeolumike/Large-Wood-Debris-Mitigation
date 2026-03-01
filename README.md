@@ -1,4 +1,4 @@
-## Project Title: Mitigating the Impact of Large Wood Debris on Bridges and Properties
+## Project Title: Mitigating Large Wood Impact in River Torridge
 ## Brief Description
 Large wood is defined as logs having length greater than 1m and diameter of at least 10cm (Gippel et al., 1996). Large wood is highly beneficial to nature. It enhances geomorphological diversity, regulates sediment transport, and provides critical habitat for aquatic fauna (Wohl, 2017). However, tree logs can become entrapped at in-channel structures such as bridge piers and then trap other large wood debris such as twigs and tree branches to form large accumulations (Diehl, 1997; Lagasse et al., 2010; Panici and de Almeida, 2018). 
 
@@ -16,20 +16,18 @@ The primary spatial data included the shapefile representing the river channel c
 These are the R scripts for the Shiny app:
 - App.R
 - Global.R
-- Server_Function.R
+- Sever_Function.R
 - Global.R
 
 ## How to Run the Shiny App
-- Open RStudio
-- Install required R packages if they are not installed already. Run this in the console:
-  ```r
-  install.packages(c("shiny", "leaflet", "sf", "raster", "ggplot2", "ggiraph", "RColorBrewer", "terra", "leafem"))
+- Open RStudio and run the following in the console:
 
-- Run the command below in the console when the packages have been installed: 
   ```r
   library("shiny")
   runGitHub("Large-Wood-Debris-Mitigation", "opeolumike")
-- Wait a few seconds. The interactive map will display on your default browser
+- The interactive map will display in the "Viewer" tab.
+- Click the "Show in new window" icon just below the "Plots" above the interactive map.
+- The interactive map will display on your browser.
 - You can turn on and off each layer on the map.
 
 ## Results
