@@ -31,6 +31,7 @@ ui <- navbarPage("Simulating Large Wood Mitigation on the River Torridge", id = 
                  )
 )
 
+
 # Define the server that performs all necessary operations
 server <- function(input, output, session){
   source("Server_Function.R", local = TRUE)
