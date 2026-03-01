@@ -22,13 +22,15 @@ source("Global.R")
 
 # Define UI for visualisation
 source("UI.R")
-
-ui <- navbarPage("Simulating LargeWood Mitigation on the River Torridge", id = 'nav',
-                 tabPanel("Map", 
-                          div(class="outer",
-                              leafletOutput("map", height = "calc(100vh - 70px)")
-                          )
-                 )
+ui <- navbarPage(
+  header = tags$head(tags$base(href = "/Large-Wood-Debris-Mitigation/")),
+  "Instream Large Wood on the River Torridge", 
+  id = 'nav',
+  tabPanel("Map", 
+           div(class="outer",
+               leafletOutput("map", height = "calc(100vh - 70px)")
+           )
+  )
 )
 
 # Define the server that performs all necessary operations
