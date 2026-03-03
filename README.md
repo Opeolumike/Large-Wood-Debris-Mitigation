@@ -19,7 +19,7 @@ These are the R scripts for the Shiny app:
 - Sever_Function.R
 - Global.R
 
-Open the web app at https:/largewood.michaelopeoluwa.com. It could take some seconds to load.
+Open the web app at https://largewood.michaelopeoluwa.com. It could take some seconds to load.
 
 ## How to Run the Shiny App in RStudio
 - Open RStudio and run the following in the console:
