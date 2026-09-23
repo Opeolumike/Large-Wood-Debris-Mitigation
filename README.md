@@ -34,7 +34,7 @@ Open the web app at https://largewood.michaelopeoluwa.com. It could take some se
 
 ## Results
 The spatial distribution of Large Wood (LW) across the River Torridge catchment was found to be non-random, exhibiting distinct patterns of accumulation rather than uniform dispersion.
-To quantify this, a Kernel Density Estimation (KDE) was performed and a heatmap was generated. The heatmap highlights specific high-density zones called “hotspots”. The analysis indicates that the highest concentration of wood is located in the upstream of Rothern Bridge and Hatherleigh Bridge. These hotspots represent areas of significant large wood recruitment and retention(See Figure 1 below)
+To quantify this, a Kernel Density Estimation (KDE) was performed and a heatmap was generated. The heatmap highlights specific high-density zones called “hotspots”. The analysis indicates that the highest concentration of wood is located in the upstream of Rothern Bridge and Hatherleigh Bridge. These hotspots represent areas of significant large wood recruitment and retention.
 
 Topographic analysis derived from the DTM indicates that these high-density zones correlate strongly with the slope and aspect. Steep slopes were observed in proximity to LW hotspots. Furthermore, aspect analysis highlights that the river banks with the highest LW clusters predominantly face the prevailing wind direction.
 This is supported by the result of the Tree Cover Ratio analysis done in RStudio, which confirms that high-risk reaches align with upstream zones of dense riparian woodland, validating that there are lots of trees nearby.
